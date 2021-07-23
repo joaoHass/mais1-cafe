@@ -185,6 +185,7 @@ span {
 }
 
 .btn:hover {
+  -webkit-filter: brightness(0.8);
   filter: brightness(0.8);
 }
 
@@ -478,6 +479,7 @@ span {
   height: 100%;
   transform-style: preserve-3d;
   transition: transform 0.5s;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -512,6 +514,7 @@ span {
 }
 
 .card__face--back {
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform: rotateY(180deg);
 }
@@ -541,6 +544,10 @@ span {
   width: 100%;
   /* 815 px (1rem = 16px) */
   max-width: 50.9375rem;
+
+  -webkit-hyphens: none;
+
+  -ms-hyphens: none;
 
   hyphens: none;
 }
@@ -868,6 +875,7 @@ lite-youtube {
     width: 100%;
     height: auto;
     z-index: -1;
+    -webkit-filter: blur(0.5px);
     filter: blur(0.5px);
   }
 
@@ -1072,6 +1080,30 @@ lite-youtube {
     max-width: 450px;
     border-radius: 8px;
     padding: 1em 2em;
+    -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @-webkit-keyframes slide-in-right {
+    0% {
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 
   .section-form__form h6 {
