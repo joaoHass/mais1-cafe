@@ -67,7 +67,7 @@
 
 body {
   font-family: var(--ff-raleway);
-  overflow: hidden;
+  overflow-x: hidden;
   /* hyphens: auto; */
 }
 
@@ -123,10 +123,9 @@ h1 {
   line-height: var(--line-height-sm);
 }
 
-h2 {
-  font-size: var(--fs-big);
-}
-
+h2,
+h3,
+h5,
 h6 {
   font-size: var(--fs-big);
 }
@@ -176,7 +175,7 @@ span {
   font-weight: bold;
   text-transform: uppercase;
   color: var(--clr-white);
-  background-color: #2b9843;
+  background-color: #248439;
   padding: 1.5em 1.5em;
   border: 0;
   border-radius: 0.3125em;
@@ -292,7 +291,7 @@ span {
   background-color: var(--clr-accent);
 }
 
-.section-form__form h6 {
+.section-form__form h2 {
   width: 80%;
   line-height: 1.2;
   margin: 0 auto;
@@ -386,7 +385,7 @@ span {
   padding: 4em 0 0 0;
 }
 
-.section-coffe-to-go h2 {
+.section-coffe-to-go h3 {
   text-align: center;
 }
 
@@ -445,7 +444,7 @@ span {
   font-weight: 700;
 }
 
-.section-mercado h5 {
+.section-mercado h3 {
   font-size: var(--fs-big);
   text-align: center;
 }
@@ -532,7 +531,7 @@ span {
   text-align: center;
 }
 
-.section-diferenciais h6 {
+.section-diferenciais h3 {
   font-size: var(--fs-big);
 }
 
@@ -588,7 +587,7 @@ span {
   padding: 4em 0;
 }
 
-.section-why-special h6 {
+.section-why-special h3 {
   text-align: center;
 }
 
@@ -628,7 +627,7 @@ span {
   padding: 2em 0;
 }
 
-.section-modelo-negocios h4 {
+.section-modelo-negocios h3 {
   text-align: center;
   font-size: var(--fs-big);
 }
@@ -689,7 +688,7 @@ span {
   gap: 0.5em;
 }
 
-.section-franqueado h5 {
+.section-franqueado h4 {
   font-size: var(--fs-big);
   text-align: center;
 }
@@ -736,7 +735,7 @@ lite-youtube {
   align-items: center;
 }
 
-.section-testimonials h6 {
+.section-testimonials h4 {
   font-size: var(--fs-big);
   text-align: center;
 }
@@ -795,7 +794,7 @@ lite-youtube {
   padding: 4em 0;
 }
 
-.section-media h6 {
+.section-media h5 {
   font-size: var(--fs-big);
   text-align: center;
 }
@@ -917,7 +916,7 @@ lite-youtube {
     font-size: var(--fs-sm);
   }
 
-  .section-form__form h6 {
+  .section-form__form h2 {
     font-size: var(--fs-lg);
     width: 50%;
   }
@@ -1107,7 +1106,7 @@ lite-youtube {
     }
   }
 
-  .section-form__form h6 {
+  .section-form__form h2 {
     font-size: var(--fs-med);
     width: 100%;
   }

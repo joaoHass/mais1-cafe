@@ -1,4 +1,4 @@
-import { CountUp } from "countup.js"
+import { CountUp } from "./node_modules/countup.js/dist/countUp.js"
 
 const plus = {
   prefix: "+",
