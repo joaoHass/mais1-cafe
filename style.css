@@ -67,6 +67,7 @@
 
 body {
   font-family: var(--ff-raleway);
+  overflow: hidden;
   /* hyphens: auto; */
 }
 
